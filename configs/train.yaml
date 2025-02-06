@@ -1,0 +1,41 @@
+common:
+  mode: "im_mask"
+  imsize: 1024
+  augment_type: 1
+  num_pairs: 2   
+
+session_configs:
+  0:
+    datasets_list:
+      # BCMC
+      - root_path: D:\BaiduNetdiskDownload\datasets\tampCOCO
+        im_list_file: D:\workspace\sam2\dataset_configs\bcmc_COCO_tamp_train.txt
+      - root_path: D:\BaiduNetdiskDownload\datasets\tampCOCO
+        im_list_file: D:\workspace\sam2\dataset_configs\bcm_COCO_tamp_train.txt
+      - root_path: D:\BaiduNetdiskDownload\datasets\tampCOCO
+        im_list_file: D:\workspace\sam2\dataset_configs\cm_COCO_tamp_train.txt
+      - root_path: D:\BaiduNetdiskDownload\datasets\tampCOCO
+        im_list_file: D:\workspace\sam2\dataset_configs\sp_COCO_tamp_train.txt
+
+  1:
+    datasets_list:
+      - root_path: D:\BaiduNetdiskDownload\datasets
+        im_list_file: D:\workspace\sam2\dataset_configs\CASIA_v2_tamp_train.txt
+      - root_path: D:\BaiduNetdiskDownload\datasets
+        im_list_file: D:\workspace\sam2\dataset_configs\CASIA_v2_auth_train.txt
+
+  2:
+    datasets_list:
+      - root_path: D:\BaiduNetdiskDownload\datasets\FantasticReality_v1
+        im_list_file: D:\workspace\sam2\dataset_configs\FantasticReality_auth_train.txt
+      - root_path: D:\BaiduNetdiskDownload\datasets\FantasticReality_v1
+        im_list_file: D:\workspace\sam2\dataset_configs\FantasticReality_tamp_train.txt
+
+  3:
+    datasets_list:
+      - root_path: D:\BaiduNetdiskDownload\datasets\IMD2020
+        im_list_file: D:\workspace\sam2\dataset_configs\IMD2020_tamp_train.txt
+
+
+
+
